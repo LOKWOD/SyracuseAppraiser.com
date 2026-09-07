@@ -1,3 +1,13 @@
 @import url("style-base.css");
 .nav nav a[href$="resources.html"]{display:none}
-.page-hero{background-image:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(246,252,254,.92) 55%,rgba(234,247,252,.82) 100%),url("https://commons.wikimedia.org/wiki/Special:FilePath/New_housing_development%2C_Clay%2C_NY.jpg");background-size:cover;background-position:center 45%}
+.page-hero{background-image:radial-gradient(circle at 88% 18%,rgba(61,169,202,.16),transparent 28%),linear-gradient(125deg,#fff 0%,#f4fbfd 58%,#e6f5fa 100%)}
+.seo-detail{border-top:1px solid var(--line);margin-top:38px;padding-top:2px}
+.credentials-band{background:#eff8fa;border-top:1px solid #d8e9ef;padding:22px 0}
+.credential-items{display:flex;align-items:center;justify-content:center;gap:12px 30px;flex-wrap:wrap;color:#40535e;font-size:14px}
+.credential-items strong{color:var(--navy)}
+.credential-items span{position:relative}
+.credential-items span::before{content:"✓";color:#16825f;font-weight:900;margin-right:7px}
+.credential-items a{color:var(--blue);font-weight:800;text-decoration:none}
+.credential-items a:hover{text-decoration:underline}
+main::after{display:none}
+@media(max-width:700px){.credential-items{align-items:flex-start;flex-direction:column;gap:8px}.credential-items span,.credential-items a{margin-left:0}}
